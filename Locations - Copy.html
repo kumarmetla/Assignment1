@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+<div id="header"> <img src="images/logo.png" alt="" id="logo">
+<h1 id="logo-text">KMK Group of Hotels</h1>
+</div>
+<div id="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bookings.html">Bookings</a></li>
+  <li><a href="Facilities.html">Facilities</a></li>
+  <li><a href="contact us.html">Contact us</a></li>
+  <li><a href="login.html">login</a></li>
+    <li style="border-right: medium none;"><a href="Locations.html">Locations</a></li>
+</ul>
+</div>
+<div id="site-content">
+<div id="col-left">
+<h1 class="h-text-1">Our Locations</h1>
+<p> 243 ACADEMY STREET</p> 
+<p> JERSEY CITY</p> 
+<p> NEW JERSEY</p>
+</br> 
+<p> 116 WEST UNIVERSITY PARKWAY</p>
+<p> BALTIMORE </P>
+<P> MARYLAND </P>
+<br>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(39.338426, -76.621831),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="googleMap" style="width:700px;height:480px;"></div>
+</div>
+</div>
+<div id="footer">
+
+<p>&copy; Copyright 2015. Designed by <a target="_blank"
+ <a target="_blank" href="http://www.kmkgroup.net">kmkgroup</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>
